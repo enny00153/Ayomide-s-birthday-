@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Ayomide!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2016/11/29/02/43/milky-way-1867315_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      padding: 50px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      animation: fadeIn 3s ease-in;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ffccff;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.7;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Confetti animation */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      animation: fall 5s infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- YouTube Music Embed -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1&loop=1&mute=1&playlist=2Vv-BfVoq4g" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+
+  <div class="container">
+    <h1>Hey BELLO AYOMIDE!!!</h1>
+    <h2>Happy Birthday, Engineer To Be!</h2>
+    <p>Today isn’t just any day… It’s the day the <strong>universe got a major upgrade</strong> because <strong>YOU</strong> were born!</p>
+    <p>From your <strong>cutest laugh</strong> to the way you care about the tiniest things, you’ve somehow made this world (and <em>my</em> world) so much better.</p>
+    <p>You are kind, smart, annoyingly cute, and always there even when I don’t say I need you.</p>
+    <p>I got you a cake and this website—but even all that can’t sum up how grateful I am for you.</p>
+    <p>Thank you for being you. I honestly don’t know how I got this lucky.</p>
+    <p><strong>So here’s to you—my favorite person in the whole galaxy.</strong></p>
+    <p>Let today be filled with love, laughter, and maybe… me stealing your cake.</p>
+    <p><strong>Happy Birthday again, love. Now smile, or I’ll tickle you.</strong></p>
+    <p>Love,<br><em>Your Number One Fan (and Second Mom).</em></p>
+  </div>
+
+  <!-- Confetti -->
+  <script>
+    const colors = ['#ffc0cb', '#ffff99', '#99ccff', '#ccffcc', '#ffb3ff'];
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * 100 + 'vw';
+      confetti.style.top = Math.random() * -100 + 'px';
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      confetti.style.animationDelay = (Math.random() * 5) + 's';
+      document.body.appendChild(confetti);
+    }
+  </script>
+</body>
+</html>
